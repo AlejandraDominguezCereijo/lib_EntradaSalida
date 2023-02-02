@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.util.Scanner;
 
 /**
  * Libreria para sacar por dispositivos un mensaje y
@@ -7,6 +8,7 @@ import javax.swing.*;
  * @author Damian Nogueiras
  */
 public class EntradaSalida {
+
     /**
      * opción de uso de la consola para imprimir un mensaje
      */
@@ -15,6 +17,7 @@ public class EntradaSalida {
      * opción de uso de utilizar una ventana en el escritorio para sacar un mensaje
      */
     public static final int SALIDA_WINDOW = 2;
+
 
     private void EntradaSalida(){};
 
@@ -50,9 +53,15 @@ public class EntradaSalida {
     /**
      * TODO método para obtener distintos tipos de datos por consola
      * @param comentario
-     * @return
+     * @return comentario: nos va  aretornar el String que introdujo el usuario previamente
      */
     public static String entrada(String comentario){
-        return "";
+
+        return comentario;
+    }
+    public static int entrada (int coment){
+
+
+        return coment;
     }
 }
