@@ -51,14 +51,19 @@ public class EntradaSalida {
     }
 
     /**
-     * TODO método para obtener distintos tipos de datos por consola
+     * Método para obtener cadena de caracteres por consola
      * @param comentario
-     * @return comentario: nos va  aretornar el String que introdujo el usuario previamente
+     * @return comentario: nos va  a retornar el String que introdujo el usuario previamente
      */
     public static String entrada(String comentario){
 
         return comentario;
     }
+    /**
+     * Método para obtener datos enteros por consola
+     * @param coment
+     * @return coment: nos va  a retornar el int que introdujo el usuario previamente
+     */
     public static int entrada (int coment){
 
 
