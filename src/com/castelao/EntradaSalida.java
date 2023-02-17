@@ -1,3 +1,5 @@
+package com.castelao;
+
 import javax.swing.*;
 import java.util.Scanner;
 
