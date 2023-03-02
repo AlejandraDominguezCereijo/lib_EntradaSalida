@@ -24,7 +24,7 @@ public class EntradaSalida {
     public static final int RESTA = 2;
     public static final int MULTIPLICACION = 3;
     public static final int DIVISION = 4;
-
+    public static final int RAIZ = 5;
 
     private void EntradaSalida() {
     }
@@ -123,6 +123,16 @@ public class EntradaSalida {
                     try {
                         float division =(Integer) Math.round(dato1/dato2);/*con Math.round conseguimos que solo nos devuelva la parte entera de la division*/
                         System.out.println("El resultado de la division es: " + division);
+                    } catch (Exception calcular) {
+                        System.out.println("Error al realizar la operacion");
+                        System.out.println(calcular.getMessage());
+                    }
+                    break;
+                case RAIZ:
+                    try {
+                        float raiz_cuadrada = (float) Math.sqrt(9);
+                        float raiz_cubica= (float) Math.pow(9,3);
+                        System.out.println("El resultado de la raiz cuadrada es " + raiz_cuadrada+" y el resultado de la raiz cubica es "+raiz_cubica);
                     } catch (Exception calcular) {
                         System.out.println("Error al realizar la operacion");
                         System.out.println(calcular.getMessage());
